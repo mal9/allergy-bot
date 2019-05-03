@@ -1,1 +1,1 @@
-web: python allergy.py
+workek: python allergy.py
