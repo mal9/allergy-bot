@@ -1,1 +1,1 @@
-workek: python allergy.py
+worker: python allergy.py
