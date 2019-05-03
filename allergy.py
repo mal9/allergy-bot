@@ -8,7 +8,7 @@ import urllib
 import pickle
 from os import listdir
 
-TOKEN = "503124568:AAFgKJSCKcwqplnSTjGTVtHDX6Zq-omrc-w"
+TOKEN = "803725886:AAFig89e5qEyWqWw8C2ZLPisXlS73ghwx_o"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 TODAY = time.time() // 86400
 trees = ['ольха', 'орешник', 'береза', 'вяз', 'клен', 'ясень', 'ива', 'дуб', 'кипарис', 'бук', 'граб']
