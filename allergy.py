@@ -142,7 +142,7 @@ def handle_updates(updates):
 
         except Exception as e:
             if 'No such file or directory:' in str(e):
-                send_message('У нас новый пользователь! Приветствуем {}. Всего {}'.format(chat, len(listdir('users/')), chat_id='267399865')
+                send_message('У нас новый пользователь! Приветствуем {}. Всего {}'.format(chat, len(listdir('users/'))), chat_id='267399865')
             else:
                 send_message('Ярик, блядь. {} \n  юзер {}'.format(str(e), chat), chat_id='267399865')
             stats = {'warnings': []}
