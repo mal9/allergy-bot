@@ -83,7 +83,7 @@ def get_allergy_info(step=0):
             return get_allergy_info(step=step+1)
 
         allergy_msg = "Вот данные на {}\n\n".format(info['time'])
-        allergy_msg += "Растение - уровень опасности(кол-во частиц на м3)"
+        allergy_msg += "Растение - уровень опасности(кол-во частиц на м3)\n"
 
         for key in info:
             if key.lower() in trees:
