@@ -126,16 +126,17 @@ def get_last_update_id(updates):
 
 def handle_updates(updates):
     global TODAY
+    
+    if time.time() % 86400 > 18000:
+        if (time.time()//86400) - TODAY != 0:
+            send_notifications()
+            TODAY += 1
 
     for update in updates["result"]:
         text = update["message"]["text"]
         chat = update["message"]["chat"]["id"]
 
-        if time.time() % 86400 > 32400:
-            if (time.time()//86400) - TODAY != 0:
-                send_notifications()
-                TODAY += 1
-
+     
         try:
             with open('users/{}.pickle'.format(chat), 'rb') as f:
                 stats = pickle.load(f)
