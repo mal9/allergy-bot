@@ -1,12 +1,11 @@
 from bs4 import BeautifulSoup
-
+from os import listdir
 import json
 import requests
 import time
 import datetime
 import urllib
 import pickle
-from os import listdir
 
 TOKEN = "803725886:AAFig89e5qEyWqWw8C2ZLPisXlS73ghwx_o"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
